@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mLearn - Supercharge language learning by immersion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="nav-bg"></div>
+    <div class="nav-c">
+        <div class="nav">
+            <div class="nav-item"><span>mLearn</span></div>
+            <div class="nav-item faint" id="features"><span>Features</span></div>
+            <div class="nav-item faint" id="usage"><span>Usage</span></div>
+            <div class="nav-item faint" id="faq"><span>FAQ</span></div>
+            <div class="nav-item faint" id="github"><span>GitHub</span></div>
+            <div class="nav-item faint"><a href="/download" class="btn">Download</a></div>
+        </div>
+    </div>
+    <main>
+        <section class="hero">
+            <h1 class="animate-blur already-visible">Supercharge your language learning journey by watching native content</h1>
+            <h2 class="translucent animate-blur">Start watching your favourite media without English subtitles</h2>
+            <div class="sm-spacer"></div>
+            <h2 class="translucent">mLearn automatically adapts to your language level for you to learn new vocabulary.</h2>
+            <div class="sm-spacer"></div>
+            <div class="btn-container">
+                <a href="/download" class="btn">Download Now</a>
+            </div>
+            <div class="highlight1 h hs1"></div>
+            <div class="hero-img">
+                <div class="img-c">
+                    <img src="img/Screenshot%202024-10-18%20at%2011.35.05.png" alt="">
+                    <div class="fader"></div>
+                    <div class="note">Note: The subtitles and video are for demonstration purposes only. Video: Blender Big Buck Bunny</div>
+                </div>
+            </div>
+        </section>
+        <div class="separator"></div>
+        <section class="features">
+            <h1 class="animate-blur">Features</h1>
+            <div class="cards">
+                <div class="card left-spotlight highlight live_tr">
+                    <div class="img bottom-left screenshot fade-tr">
+                        <img src="img/live_tr.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>Live word translation</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight intelligent">
+                    <div class="img bottom-left screenshot fade-t">
+                        <img src="img/intelligent.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>Intelligent Features</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight fl_cr">
+                    <div class="img screenshot">
+                        <img src="img/fl_cr.png" alt="" class="fade-b">
+                    </div>
+                    <div class="card-content">
+                        <p>Advanced Flashcard Creation</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight blur">
+                    <div class="img screenshot">
+                        <img src="img/blur.png" alt="" class="fade-t">
+                    </div>
+                    <div class="card-content">
+                        <p>Blur Known Words</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight adj_diff">
+                    <div class="img screenshot">
+                        <div class="slider-c">
+                            <input type="range" class="slider" value="25">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Adjustable Difficulty</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight battery">
+                    <div class="img screenshot">
+                        <div class="bat-c">
+                            <div class="battery-level"></div>
+                            <div class="battery-tip"></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>Power Efficient & Offline Mode</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight sync_subs">
+                    <div class="img screenshot">
+                        <img src="img/sync.png" alt="" class="fade-t">
+                    </div>
+                    <div class="card-content">
+                        <p>Sync Subtitles with Video</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight lang_support">
+                    <div class="img screenshot fade-br">
+                        <img src="img/lang_support.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>Supports multiple languages</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight grammar">
+                    <div class="img screenshot fade-br">
+                        <img src="img/grammar.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>Grammatically Analyses subtitles</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight recently_watched">
+                    <div class="img screenshot fade-br">
+                        <img src="img/recently_watched.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>Quick Video Access <span class="faint asterisk reveal">* <span class="small">Placeholder Photos by <a href="https://unsplash.com/@fedotov_vs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Vladimir Fedotov</a> on <a href="https://unsplash.com/photos/landscape-of-forest-GWggAB8uAlA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                          </span></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight streaming">
+                    <div class="img screenshot fade-tl">
+                        <img src="img/streaming.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>Streams any type of video</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight mLearn">
+                    <div class="img screenshot card-content">
+                        <span>mLearn</span>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight anki">
+                    <div class="img screenshot fade-b">
+                        <img src="img/anki.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>Supports Anki</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight design">
+                    <div class="img screenshot fade-bt">
+                        <img src="img/design.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>Very Customizable</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="separator"></div>
+        <section class="features_boxes">
+            <div class="boxes">
+                <div class="card left-spotlight highlight l">
+                    <div class="img-c"><img src="img/dark_light.png" class="fade-r-s"></div>
+                    <div class="card-content">
+                        <h2>A dark and a light mode</h2>
+                        <p>Watch your favourite content without blinding yourself</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight r b-furigana">
+                    <div class="img-c">
+                        <img src="img/furigana.png" class="fade-l-s">
+                        <div class="note">Video: Blender Big Buck Bunny</div>
+                    </div>
+                    <div class="card-content">
+                        <h2>Live character reading</h2>
+                        <p>mLearn automatically adds furigana (and pinyin, coming soon...) readings to unknown words</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight l">
+                    <div class="img-c"><img src="img/custom-POS.png" class="fade-r"></div>
+                    <div class="card-content">
+                        <h2>Customise subtitle colours based on grammar</h2>
+                        <p>mLearn automatically grammatically-analyses subtitles on the fly</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight r">
+                    <div class="img-c"><img src="img/anki_settings.png" class="fade-l-s"></div>
+                    <div class="card-content">
+                        <h2>Anki Support</h2>
+                        <p>Automatic flashcard fetching to provide more accurate word definitions and flashcard creation</p>
+                    </div>
+                </div>
+                <div class="card left-spotlight highlight l b-dictionary">
+                    <div class="img-c">
+                        <img src="img/dictionary.png" class="fade-r-s">
+                        <div class="note">Video: Blender Big Buck Bunny</div>
+                    </div>
+                    <div class="card-content">
+                        <h2>Automatic Word Lookup</h2>
+                        <p>mLearn automatically looks up words that it cannot find in your Anki decks and displays their definitions on the top and on hover.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="guide">
+            <h1 class="animate-blur">How to Use</h1>
+            <p>Just paste the URL of the video/streaming content you want to watch into the app. Drag'n'dropping it also works.</p>
+            <p>To add subtitles, just paste them/drag'n'drop them onto the video player.</p>
+        </section>
+        <section class="features2">
+            <h1 class="animate-blur">Power efficiency</h1>
+            <p>The app draws less power than Google Chrome, enabling you to watch your favourite media offline. The app is also well-suited to watch your favourite series on a plane flight.</p>
+        </section>
+        <section class="faq">
+            <h1 class="animate-blur">FAQ</h1>
+            <div class="faq-c">
+                <div class="faq-item">
+                    <div class="question"><span>Which languages are supported?</span><div class="icon"></div></div>
+                    <div class="answer"><span>mLearn ships with complete German and Japanese support. You can add your own languages too by following the guide on the <a href="/github.html" target="_blank">GitHub page</a>.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>Can the app work offline?</span><div class="icon"></div></div>
+                    <div class="answer"><span>For now, Offline-mode is restricted to Japanese because no free open-source German dictionary was available at the time of writing this.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>Can the app work without Anki?</span><div class="icon"></div></div>
+                    <div class="answer"><span>Yes, you'll just have to disable it by opening the settings menu.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>Which platforms are supported?</span><div class="icon"></div></div>
+                    <div class="answer"><span>macOS on Apple Silicon, macOS on x86, Linux on x86, Windows on x86</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>Is it free?</span><div class="icon"></div></div>
+                    <div class="answer"><span>Since we wanted to make education free, mLearn is absolutely free forever and opensource.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>mLearn crashes even if I have opened Anki</span><div class="icon"></div></div>
+                    <div class="answer"><span>If you have restarted the app recently, it may have not closed properly; open your task manager and kill the process named 'python3'.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>How do I stream a video?</span><div class="icon"></div></div>
+                    <div class="answer"><span>By pasting a link to a streaming playlist (e.g. ending in .m3u8 or .mp4 or other video streaming formats), mLearn will automatically start playing that video.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>How do I find the stream link of a video?</span><div class="icon"></div></div>
+                    <div class="answer"><span>To find the URL of a stream, download the <a href="https://chromewebstore.google.com/detail/video-downloader-cococut/ekhbcipncbkfpkaianbjbcbmfehjflpf" target="_blank">CocoCut video downloader Google Chrome extension</a>, then go to the website you want to stream from. CocoCut is going to list you streaming links ending in .m3u8. You can copy and paste them into mLearn.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>I opened Anki, but mLearn cannot see that I have opened it</span><div class="icon"></div></div>
+                    <div class="answer"><span>Install the <a href="https://ankiweb.net/shared/info/2055492159" target="_blank">AnkiConnect</a> plugin.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>Why does the Japanese version of the app use so much RAM?</span><div class="icon"></div></div>
+                    <div class="answer"><span>Since the Japanese version of mLearn doesn't send requests over the internet for each word definition, it has to load a HUGE dictionary into the computer's RAM for faster word access (which makes it use less power).</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>How do I add subtitles to a video?</span><div class="icon"></div></div>
+                    <div class="answer"><span>Just drag'n'drop them onto the mLearn video player.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>I found a bug!</span><div class="icon"></div></div>
+                    <div class="answer"><span>Please open a GitHub issue <a href="https://github.com/adrianvla/mLearn" target="_blank">here</a>.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>I want to contact the developer</span><div class="icon"></div></div>
+                    <div class="answer"><span>Please email <a href="mailto:admin@morisinc.net">admin@morisinc.net.</a></span></div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="logo">
+                <span>mLearn</span>
+            </div>
+            <div class="list">
+                <div class="sep"></div>
+                <div class="nav-item faint"><span>mLearn</span></div>
+                <div class="nav-item faint p" id="features1"><span>Features</span></div>
+                <div class="nav-item faint p" id="usage1"><span>Usage</span></div>
+                <div class="nav-item faint p" id="faq1"><span>FAQ</span></div>
+                <div class="nav-item faint p" id="github1"><span>GitHub</span></div>
+                <div class="nav-item faint"><a href="/download">Download</a></div>
+                <div class="v-filler"></div>
+                <div class="faint credit"><a href="https://morisinc.net" target="_blank"><span>Website by</span> MORISINC</a></div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

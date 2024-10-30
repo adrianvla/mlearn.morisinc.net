@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Download mLearn - MacOS</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+<div class="nav-bg"></div>
+<div class="nav-c">
+    <div class="nav">
+        <div class="nav-item"><span><a href="../../">mLearn</a></span></div>
+        <div class="nav-item faint" id="features"><span><a href="../../#features">Features</a></span></div>
+        <div class="nav-item faint" id="usage"><span><a href="../../#usage">Usage</a></span></div>
+        <div class="nav-item faint" id="faq"><span><a href="../../#faq">FAQ</a></span></div>
+        <div class="nav-item faint" id="github"><span>GitHub</span></div>
+        <div class="nav-item faint"><a href="../" class="btn">Download</a></div>
+    </div>
+</div>
+<main>
+    <section class="download">
+        <h1>Select your CPU architecture</h1>
+        <h2 class="translucent">If you're unsure, newer macs tend to have an Apple Silicon chip</h2>
+        <div class="separator"></div>
+        <div class="cpu">
+            <a href="../auto#macos_x86">
+                <div class="card left-spotlight highlight x86">
+                    <div class="img screenshot fade-b">
+                        <img src="intel.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>Intel (x86)</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../auto#macos_arm64">
+                <div class="card left-spotlight highlight aarch64">
+                    <div class="img screenshot fade-b">
+                        <img src="m3.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>Apple Silicon (aarch64)</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+</main>
+
+
+<script src="../../main.js"></script>
+</body>
+</html>
