@@ -1,3 +1,3 @@
 # mlearn.morisinc.net
 
-This contains the website for the [mLearn](http://github.com/adrianvla/mLearn) app.
+This contains the source code of the website of the [mLearn](http://github.com/adrianvla/mLearn) app.
