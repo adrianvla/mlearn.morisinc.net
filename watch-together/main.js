@@ -6,6 +6,7 @@ let lastIndex = 0;
 let lastSub = null;
 let last_lastIndex = 0;
 let subsOffsetTime = 0;
+let serverURL = null;
 const video = document.getElementById('fullscreen-video');
 const volumeSlider = document.getElementById('volume');
 const progressBar = document.getElementById('progress-bar');
@@ -191,6 +192,7 @@ function updateBufferBar() {
     }
 }
 const loadStream = (text) => {
+    text = serverURL+"?url="+text;
     if(HLSObject) HLSObject.destroy();
     HLSObject = new Hls();
     HLSObject.loadSource(text);
@@ -264,6 +266,7 @@ $(document).ready(()=>{
         if(hasOwnSubs){
             file_input.click();
         }
+        serverURL = $("#url").val();
         let url = $("#url").val().replace(/^[a-zA-Z]+:\/\//, '');
         console.log("Connecting to wss://"+url);
         webSocket = new WebSocket("wss://"+url);
