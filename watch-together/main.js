@@ -192,6 +192,9 @@ function updateBufferBar() {
     }
 }
 const loadStream = (text) => {
+    if (!/^https?:\/\//i.test(serverURL)) {
+        serverURL = "https://" + serverURL; // Default to HTTPS if no protocol is present
+    }
     text = serverURL+"?url="+text;
     if(HLSObject) HLSObject.destroy();
     HLSObject = new Hls();
@@ -266,8 +269,8 @@ $(document).ready(()=>{
         if(hasOwnSubs){
             file_input.click();
         }
-        serverURL = $("#url").val();
         let url = $("#url").val().replace(/^[a-zA-Z]+:\/\//, '');
+        serverURL = url;
         console.log("Connecting to wss://"+url);
         webSocket = new WebSocket("wss://"+url);
         webSocket.onopen = ()=>{
