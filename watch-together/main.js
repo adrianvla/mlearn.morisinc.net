@@ -265,8 +265,8 @@ $(document).ready(()=>{
             file_input.click();
         }
         let url = $("#url").val().replace(/^[a-zA-Z]+:\/\//, '');
-        console.log("Connecting to ws://"+url);
-        webSocket = new WebSocket("ws://"+url);
+        console.log("Connecting to wss://"+url);
+        webSocket = new WebSocket("wss://"+url);
         webSocket.onopen = ()=>{
             console.log("Connected to the server.");
             $(".recently-c").remove();
