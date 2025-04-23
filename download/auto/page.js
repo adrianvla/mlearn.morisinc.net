@@ -1,9 +1,9 @@
 //get url hash
 const URLS = {
-    "linux":"https://github.com/adrianvla/mLearn/releases/download/v1.1.1/mLearn-linux-x64.zip",
-    "windows":"https://github.com/adrianvla/mLearn/releases/download/v1.1.1/mLearn-win32-x64.zip",
-    "macos_x86":"https://github.com/adrianvla/mLearn/releases/download/v1.1.1/mLearn_x86.dmg",
-    "macos_arm64":"https://github.com/adrianvla/mLearn/releases/download/v1.1.1/mLearn_arm64.dmg",
+    "linux":"https://github.com/adrianvla/mLearn/releases/download/v1.1.1.1/mLearn-linux-x64.zip",
+    "windows":"https://github.com/adrianvla/mLearn/releases/download/v1.1.1.1/mLearn-win32-x64.zip",
+    "macos_x86":"https://github.com/adrianvla/mLearn/releases/download/v1.1.1.1/mLearn_x86.dmg",
+    "macos_arm64":"https://github.com/adrianvla/mLearn/releases/download/v1.1.1.1/mLearn_arm64.dmg",
 };
 
 
