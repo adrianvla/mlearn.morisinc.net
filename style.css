@@ -821,7 +821,7 @@ section.hero, section.download{
     margin-right:-500px;
 }
 .b-dictionary img{
-    margin-left:-200px;
+    margin-left:0px;
 }
 
 .platforms{
@@ -946,4 +946,7 @@ section.footer{
 }
 .sep{
     width:100%;
+}
+.card p{
+    color:#fff;
 }
