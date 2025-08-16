@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mLearn - Watch Together</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.18/hls.min.js"></script>
+</head>
+<body class="dark">
+    <div class="recently-c">
+        <div class="recently settingsMenuContent stats">
+            <h1>Enter your Watch Together Server's Link</h1>
+            <input type="text" id="url">
+            <button id="connect">Connect</button>
+            <div style="display:flex;justify-content: center;align-items:center;"><label for="" style="text-align: center;color:#aaa">I'll provide my own subtitles</label><input type="checkbox" name="" id="own-subs"></div>
+        </div>
+    </div>
+    <video id="fullscreen-video">
+        <source type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="subtitles theme-shadow">
+    </div>
+    <div id="video-controls">
+        <div class="upper">
+            <div class="volume">
+                <img src="assets/icons/volume.svg">
+                <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+            </div>
+            <div class="playback">
+            </div>
+            <div class="filler">
+                <select id="video-quality" class="hidden">
+                    <option value="-1">Auto</option>
+                </select>
+            </div>
+        </div>
+        <div class="lower">
+            <span class="current-time">--:--</span>
+            <input type="range" id="progress-bar" min="0" max="1000" value="0">
+            <span class="total-time">--:--</span>
+        </div>
+    </div>
+    <div class="sync-subs not-shown">
+        <div class="controls">
+            <button class="backward"><img src="assets/icons/fast-forward.svg"></button>
+            <input type="text" class="">
+            <button class="forward"><img src="assets/icons/fast-forward.svg"></button>
+        </div>
+    </div>
+
+    <iframe src="" frameborder="0" hidden></iframe>
+
+    <script src="main.js"></script>
+</body>
+</html>
