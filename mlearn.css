@@ -214,7 +214,7 @@ body.dark .subtitle_hover .pitch {
     content: "";
     width: 10px;
     height: 10px;
-    background: url(http://localhost:7753/pages/assets/icons/star.svg) no-repeat center;
+    background: url(./assets/icons/star.svg) no-repeat center;
     background-size: contain;
     top: 0;
     left: 0;

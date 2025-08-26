@@ -21,7 +21,8 @@
             <div class="nav-item faint" id="usage"><span>Usage</span></div>
             <div class="nav-item faint" id="faq"><span>FAQ</span></div>
             <div class="nav-item faint" id="github"><span>GitHub</span></div>
-            <div class="nav-item faint"><a href="/download" class="btn">Download</a></div>
+            <div class="nav-item faint"><a href="./tutorial" class=""><span>Tutorials</span></a></div>
+            <div class="nav-item faint"><a href="./download" class="btn">Download</a></div>
         </div>
     </div>
     <main>
@@ -168,6 +169,15 @@
         <div class="separator"></div>
         <section class="features_boxes">
             <div class="boxes">
+                <div class="card left-spotlight highlight r watch-together">
+                    <div class="img-c">
+                        <img src="img/watch-together.png" class="fade-l-s">
+                    </div>
+                    <div class="card-content">
+                        <h2>Watch Together with peers right in your browser!</h2>
+                        <p>The best part is:<br>Your peers <b>don't have to install mLearn</b> to use all of its intelligent subtitling features right in their browser.<br><br>If you're a teacher, you can control students' video player and enhance their learning.</p>
+                    </div>
+                </div>
                 <div class="card left-spotlight highlight l">
                     <div class="img-c"><img src="img/dark_light.png" class="fade-r-s"></div>
                     <div class="card-content">
@@ -182,7 +192,7 @@
                     </div>
                     <div class="card-content">
                         <h2>Live character reading</h2>
-                        <p>mLearn automatically adds furigana (and pinyin, coming soon...) readings to unknown words</p>
+                        <p>mLearn automatically adds readings (furigana,...) to unknown words</p>
                     </div>
                 </div>
                 <div class="card left-spotlight highlight l">
@@ -262,7 +272,7 @@
                     </div>
                     <div class="card-content">
                         <h2>Watch native content</h2>
-                        <p>Hover over words to view their definitions, or adjust your knowledge of them.</p>
+                        <p>Hover over words to view their definitions, or adjust your knowledge of them, whether you're on mobile or on PC/Mac.</p>
                     </div>
                     <div class="interactive-marker">Hover over the words, try it!</div>
                     <div class="note">Video: Full Metal Alchemist Brotherhood EP1</div>
@@ -286,19 +296,49 @@
             <img src="img/mlearn-screenshot.png" alt="mLearn with legends">
         </section>
         <section class="guide player-section">
-            <h1 class="animate-blur">Tutorial Video</h1>
-            <div class="player-wrapper"><div id="player"></div></div>
+            <h1 class="animate-blur">Tutorials</h1>
+            <p>Click <a href="./tutorial">here</a> to watch tutorials.</p>
         </section>
         <section class="features2">
             <h1 class="animate-blur">Power efficiency</h1>
             <p>The app draws less power than Google Chrome, enabling you to watch your favourite media offline. The app is also well-suited to watch your favourite series on a plane flight.</p>
+        </section>
+        <section class="guide">
+            <h1 class="animate-blur">System Requirements</h1>
+            <p>MacOS, Linux, Windows with at least 8 GB of RAM.</p>
+        </section>
+        <section class="guide">
+            <h1 class="animate-blur">mLearn components definitions</h1>
+
+            <p><a href="./download" target="_blank">mLearn for PC/Mac</a>: The main app with advanced grammatical analysis tools, the main server</p>
+            <p><a href="https://mlearn-app.morisinc.net" target="_blank">mLearn Mobile Companion App</a>: The SRS Flashcard that syncs with <a href="./download" target="_blank">mLearn for PC/Mac</a></p>
+            <p>mLearn Tethered Mode: A script that's an injector tool, pasted in the browser console to integrate mLearn into your streaming service, available to copy using the "Connect" menu in <a href="./download" target="_blank">mLearn for PC/Mac</a>.</p>
+            <p>mLearn Mobile: UserScript that allows you to use mLearn on mobile devices, available to install using the "Connect" menu in <a href="./download" target="_blank">mLearn for PC/Mac</a>.</p>
+        </section>
+        <section class="guide">
+            <h1 class="animate-blur">List of Features</h1>
+            <p>Live word translation & on the fly live grammatical analysis</p>
+            <p>Watch-Together mode (show media to your friends, teacher-students mode,...)</p>
+            <p>Knows what words you know, and adjusts itself based on that.</p>
+            <p>Advanced automatic flashcard creation</p>
+            <p>Advanced language features (Pitch accent, readings, exam preparation,...)</p>
+            <p>Language exam study mode (f.ex. JLPT-oriented vocabulary selection) to help you ace your exam.</p>
+            <p>Custom Flashcard SRS System (<a href="https://mlearn-app.morisinc.net" target="_blank">mLearn Mobile Companion App</a> & SRS system in <a href="./download" target="_blank">mLearn for PC/Mac</a>)</p>
+            <p>Seamless integration with Anki</p>
+            <p>Known word blurring</p>
+            <p>Power-efficient and offline mode</p>
+            <p>Supports Japanese & German</p>
+            <p>Streams any type of video</p>
+            <p>Very customizable</p>
+            <p>Support for custom languages</p>
+            <p>Open-Source</p>
         </section>
         <section class="faq">
             <h1 class="animate-blur">FAQ</h1>
             <div class="faq-c">
                 <div class="faq-item">
                     <div class="question"><span>Which languages are supported?</span><div class="icon"></div></div>
-                    <div class="answer"><span>mLearn ships with complete German and Japanese support. You can add your own languages too by following the guide on the <a href="/github.html" target="_blank">GitHub page</a>.</span></div>
+                    <div class="answer"><span>mLearn ships with complete German and Japanese support. You can add your own languages too by following the guide on the <a href="https://github.com/adrianvla/mLearn" target="_blank">GitHub page</a>.</span></div>
                 </div>
                 <div class="faq-item">
                     <div class="question"><span>Can the app work offline?</span><div class="icon"></div></div>
@@ -310,11 +350,15 @@
                 </div>
                 <div class="faq-item">
                     <div class="question"><span>Which platforms are supported?</span><div class="icon"></div></div>
-                    <div class="answer"><span>macOS on Apple Silicon, macOS on x86, Linux on x86, Windows on x86</span></div>
+                    <div class="answer"><span>macOS on Apple Silicon, macOS on x86, Linux on x86, Windows on x86. All mobile platforms that have a web-browser (iOS, Android,...) using mLearn Mobile mode, or for the mLearn Flashcards Companion App.</span></div>
                 </div>
                 <div class="faq-item">
                     <div class="question"><span>Is it free?</span><div class="icon"></div></div>
                     <div class="answer"><span>Since we wanted to make education free, mLearn is absolutely free forever and opensource.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="question"><span>What components/apps are provided in mLearn?</span><div class="icon"></div></div>
+                    <div class="answer"><span><a href="./download" target="_blank">mLearn for PC/Mac</a>, <a href="https://mlearn-app.morisinc.net" target="_blank">mLearn Mobile Companion App</a>, mLearn Tethered Mode (page injector tool, pasted in the browser console to watch videos online), mLearn Mobile (UserScript that allows you to use mLearn on mobile devices)</span></div>
                 </div>
                 <div class="faq-item">
                     <div class="question"><span>mLearn crashes even if I have opened Anki</span><div class="icon"></div></div>
@@ -361,6 +405,7 @@
                 <div class="nav-item faint p" id="usage1"><span>Usage</span></div>
                 <div class="nav-item faint p" id="faq1"><span>FAQ</span></div>
                 <div class="nav-item faint p" id="github1"><span>GitHub</span></div>
+                <div class="nav-item faint"><a href="./tutorial">Tutorials</a></div>
                 <div class="nav-item faint"><a href="/download">Download</a></div>
                 <div class="v-filler"></div>
                 <div class="faint credit"><a href="https://morisinc.net" target="_blank"><span>Website by</span> MORISINC</a></div>
@@ -368,7 +413,6 @@
         </section>
     </main>
 
-    <script src="player.js"></script>
     <script src="demo.js"></script>
     <script src="main.js"></script>
 </body>

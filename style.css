@@ -6,7 +6,7 @@
     --color:#f7f8f8;
     --nav-top-offset:16px;
     --nav-height:48px;
-    --nav-width:600px;
+    --nav-width:650px;
     --faint-text:hsla(0,0%,100%,.8);
     --btn-light-bg:#e6e6e6;
     --bg-primary:#08090a;
@@ -800,6 +800,7 @@ section.hero, section.download{
 .boxes .card .img-c{
     height:100%;
     max-height:400px;
+    position:relative;
 }
 .boxes .card img{
     height:400px;
@@ -986,7 +987,7 @@ section.footer{
 
 }
 
-.subtitles{
+:root{
     --subtitle-font-size:30px;
 }
 
@@ -1045,4 +1046,21 @@ section.player-section .player-wrapper #player{
     .nav-c{
         display:none;
     }
+}
+b{
+    text-decoration: underline;
+}
+
+.select-tutorial > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:16px;
+}
+.select-tutorial .tutorial-list{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:16px;
 }
