@@ -25,27 +25,27 @@
 </div>
 <main>
     <section class="download">
-        <h1>Select your CPU architecture</h1>
-        <h2 class="translucent">If you're unsure, newer macs tend to have an Apple Silicon chip</h2>
+        <h1>Select your Installer</h1>
+        <h2 class="translucent">An installer installs automatically the program to your applications directory and creates necessary shortcuts, and standalone is an application that fits in a single folder.</h2>
         <div class="separator"></div>
         <div class="cpu">
-            <a href="../auto#macos_x86">
+            <a href="" id="standalone">
                 <div class="card left-spotlight highlight x86">
                     <div class="img screenshot fade-b">
-                        <img src="intel.jpg" alt="">
+                        <img src="standalone.png" alt="">
                     </div>
                     <div class="card-content">
-                        <p>Intel (x86)</p>
+                        <p>Standalone</p>
                     </div>
                 </div>
             </a>
-            <a href="../auto#macos_arm64">
+            <a href="" id="installer">
                 <div class="card left-spotlight highlight aarch64">
                     <div class="img screenshot fade-b">
-                        <img src="m3.jpg" alt="">
+                        <img src="installer.png" alt="">
                     </div>
                     <div class="card-content">
-                        <p>Apple Silicon (aarch64)</p>
+                        <p>Installer</p>
                     </div>
                 </div>
             </a>
@@ -53,7 +53,15 @@
     </section>
 </main>
 
-
+<script>
+    const hash = window.location.hash.replace("#","");
+    if(!hash){
+        document.querySelector("h1").innerText = "An error has occured, please try again.";
+    }else{
+        document.querySelector("#standalone").href = `../auto#${hash}-standalone`;
+        document.querySelector("#installer").href = `../auto#${hash}-installer`;
+    }
+</script>
 <script src="../../main.js"></script>
 </body>
 </html>
