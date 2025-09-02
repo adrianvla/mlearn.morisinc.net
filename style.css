@@ -801,6 +801,8 @@ section.hero, section.download{
     height:100%;
     max-height:400px;
     position:relative;
+    max-width:calc(100vw - 32px);
+    box-sizing: border-box;
 }
 .boxes .card img{
     height:400px;
