@@ -1,14 +1,15 @@
 //get url hash
-const URLS = {
-    "linux-standalone":"https://github.com/adrianvla/mLearn/releases/download/v1.3.5/mLearn-1.3.5-linux-amd64.zip",
-    "linux-installer":"https://github.com/adrianvla/mLearn/releases/download/v1.3.5/mlearn_1.3.5_amd64.deb",
-    "windows-standalone":"https://github.com/adrianvla/mLearn/releases/download/v1.3.5/mLearn-1.3.5-win.zip",
-    "windows-installer":"https://github.com/adrianvla/mLearn/releases/download/v1.3.5/mLearn.Setup.1.3.5.exe",
-    "macos":"https://github.com/adrianvla/mLearn/releases/download/v1.3.5/mLearn-1.3.5-mac.dmg",
-};
+const version = "1.3.6";
 
 
 $(document).ready(()=>{
+    const URLS = {
+        "linux-standalone":`https://github.com/adrianvla/mLearn/releases/download/v${version}/mLearn-${version}-linux-amd64.zip`,
+        "linux-installer":`https://github.com/adrianvla/mLearn/releases/download/v${version}/mlearn_${version}_amd64.deb`,
+        "windows-standalone":`https://github.com/adrianvla/mLearn/releases/download/v${version}/mLearn-${version}-win.zip`,
+        "windows-installer":`https://github.com/adrianvla/mLearn/releases/download/v${version}/mLearn.Setup.${version}.exe`,
+        "macos":`https://github.com/adrianvla/mLearn/releases/download/v${version}/mLearn-${version}-mac.dmg`,
+    };
     const hash = window.location.hash.replace("#","");
     if(URLS[hash]){
         $("h1 span").text(hash);
