@@ -372,6 +372,7 @@ section.hero, section.download{
 .note{
     font-size:13px;
     color:var(--faint-text);
+    opacity:0.5;
 }
 .separator,.after-hero-separator,.sep{
     height:1px;
@@ -977,7 +978,6 @@ section.footer{
     min-height:600px;
 }
 .contains-screen .note{
-    opacity:0.5 !important;
     margin-top:-50px;
 }
 .screen-img{

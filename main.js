@@ -3,19 +3,6 @@ $(".animate-blur").html(function (index, html) {
 });
 const addGsapAnimations = ()=>{
 
-    gsap.fromTo(".note",{opacity:0},{
-        opacity:0.5,
-        duration:1.5,
-        ease: "power3.out",
-        scrollTrigger: {
-            trigger: ".note",
-            start: "top center",
-            end: "top center",
-            scrub: 1,
-            markers: false,
-            once:true
-        }
-    })
 
     gsap.to(".separator",{
         width:"100%",
