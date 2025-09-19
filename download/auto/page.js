@@ -12,10 +12,13 @@ $(document).ready(()=>{
     };
     const hash = window.location.hash.replace("#","");
     if(URLS[hash]){
+        $("title").text(`Download mLearn ${version} - ${hash}`);
         $("h1 span").text(hash);
+        $("h2 span").text(`v${version}`);
         $(".download a").attr("href",URLS[hash]);
         window.location.href = URLS[hash];
     }else{
         $("h1").text("An error has occured, please try again.");
+        $("title").text(`Download mLearn - ERROR`);
     }
 });
